@@ -7,6 +7,8 @@ import "@/assets/style/base.css"
 import "@/assets/style/el-rest.css"
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+//引入iconfont
+import './assets/iconfont/iconfont.css'
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 //路由前置钩子(导航守卫)
@@ -33,7 +35,7 @@ router.beforeEach((to,fro,next)=>{
 
 // Vue.component('el-carousel',Carousel)
 // Vue.component('el-carousel-item',CarouselItem)
-
+import "./utils/recursionRoutes.js"
 new Vue({
   router,
   store,
